@@ -1,0 +1,127 @@
+.box {
+    display: flex;
+}
+
+.vertcont>.box {
+    height: 50vh;
+    width: 30vw;
+    object-fit: contain;
+    background-position: center;
+    position: relative;
+}
+
+.smallcard .box {
+    height: 100%;
+    width: 20vw;
+    min-width: 200px;
+}
+
+
+.bigcard .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    /* background-color: rgba(72, 72, 72, 0.607); */
+    background: linear-gradient(0deg, rgba(30, 30, 30, 0.78) 1.33%, rgba(30, 30, 30, 0) 90.79%);
+    color: white;
+    height: 40%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.smallcard .container {
+    background-color: rgba(60, 60, 60, 0.756);
+    color: white;
+    padding: 10px;
+}
+
+.bigcard .title {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.smallcard .title {
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+
+.vertcont .content {
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    /* number of lines to show */
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.bigcard .content {
+    height: 0;
+}
+
+.smallcard .content {
+    font-size: 15px;
+}
+
+
+.bigcard .expand .content {
+    height: auto;
+}
+
+.bigcard .expand .container {
+    height: 100%;
+}
+
+.vertcont .author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.vertcont .author img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.horicont {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+
+.horicont .title {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.horicont .rightcontent {
+    margin-left: 15px;
+}
+
+.horicont .box .leftimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horicont .content {
+    font-size: 15px;
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    /* number of lines to show */
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+}

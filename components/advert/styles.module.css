@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advert {
+    width: 100px;
+    height: 60vh;
+    border: 1px solid grey;
+}
+
+.children {
+    flex-grow: 1;
+}

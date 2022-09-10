@@ -1,0 +1,34 @@
+.container {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    padding: 25px 100px;
+}
+
+.box,
+.website,
+.box ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul li {
+    margin: 0 25px;
+    font-weight: 600;
+}
+
+.navbar ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

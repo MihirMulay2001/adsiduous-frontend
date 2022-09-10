@@ -1,0 +1,11 @@
+{
+    "id": 1,
+    "date": "1662794065818",
+    "likes": 12,
+    "comments": 5,
+    "author": {
+        "username": "mihir123",
+        "img": ""
+    },
+    "content": " Hello this is official content"
+}
