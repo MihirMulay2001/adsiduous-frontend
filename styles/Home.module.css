@@ -10,17 +10,6 @@
 }
 
 
-.threecont {
-  display: flex;
-  justify-content: justify-around;
-  align-items: center;
-  width: 100%;
-}
-
-.threecont .rightcont {
-  margin-left: 1vw;
-}
-
 .gridcont {
   display: flex;
   justify-content: space-around;
@@ -31,11 +20,22 @@
   margin: 10px 5px;
 }
 
-@media (max-width: 600px) {
-  .grid {
+
+
+
+@media (min-width: 768px) {
+  .threecont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    flex-direction: column;
   }
+
+  .threecont .rightcont {
+    margin-left: 1vw;
+  }
+
+
 }
 
 /* @media (prefers-color-scheme: dark) {

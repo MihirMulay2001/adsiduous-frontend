@@ -5,8 +5,14 @@ import Footer from "../sections/footer/Footer";
 import BlogCard from "../components/blogcard/BlogCard";
 import data from "../data/data.json";
 import Advert from "../components/advert/Advert";
+import { useGetBlogs } from "../hooks/useGetBlogs";
 
 export default function Home() {
+  const { error, loading, data: blogdata } = useGetBlogs();
+  if (loading) return <div>Loading</div>;
+  if (error) return <div>Error</div>;
+  const arr = blogdata.posts.nodes;
+  console.log(arr);
   return (
     <div>
       <Head>
@@ -17,9 +23,8 @@ export default function Home() {
 
       <Header />
       <div className={styles.main}>
-        <ThreeContainer data={data.slice(0, 3)} />
-        <GridContent data={data.slice(3, 9)} />
-        <ThreeContainer data={data.slice(9, 12)} />
+        <ThreeContainer data={arr.slice(0, 3)} />
+        <GridContent data={arr} />
       </div>
       <Footer />
     </div>

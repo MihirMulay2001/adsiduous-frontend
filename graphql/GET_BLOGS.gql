@@ -1,0 +1,10 @@
+query GetBlogs {
+  posts {
+    nodes {
+      id
+      title
+      authorId
+      date
+    }
+  }
+}

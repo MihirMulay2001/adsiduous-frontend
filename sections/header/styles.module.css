@@ -23,12 +23,29 @@
     justify-content: flex-end;
 }
 
+.navbar ul {
+    list-style-type: none;
+}
+
 .navbar ul li {
     margin: 0 25px;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .navbar ul li:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px 20px;
+    }
+
+    .navbar ul li {
+        margin: 010px;
+        font-weight: var(--font-med);
+        font-size: var(--font-small);
+    }
 }
