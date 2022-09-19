@@ -4,23 +4,26 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className={styles.container}>
-      <div className={styles.box}>
-        <div className={styles.website}>
+    <div className="w-full sticky top-0 left-0 z-20 shadow-md bg-white px-5 py-5 md:px-20 py-7">
+      <div className={"flex justify-between"}>
+        <div className={""}>
           <Link href="/">
-            <div>
-              <span className={styles.logo}>
+            <div className="flex flex-row">
+              <span className={""}>
                 <img src="" alt="Logo here" />
               </span>
-              <span className={styles.name}>Website Name </span>
+              <span className={""}>Website Name </span>
             </div>
           </Link>
         </div>
-        <div className={styles.navbar}>
-          <ul typeof="none">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact us</li>
+        <div className={"w-full md:w-1/2 lg:w-1/4 "}>
+          <ul
+            className="flex flex-row justify-between font-bold text-lg "
+            typeof="none"
+          >
+            <li className="hover:underline cursor-pointer">Home</li>
+            <li className="hover:underline cursor-pointer">About</li>
+            <li className="hover:underline cursor-pointer">Contact us</li>
           </ul>
         </div>
       </div>

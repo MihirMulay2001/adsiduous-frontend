@@ -1,5 +1,4 @@
 import Head from "next/head";
-import styles from "../styles/home.module.css";
 import Header from "../sections/header/Header";
 import Footer from "../sections/footer/Footer";
 import BlogCard from "../components/blogcard/BlogCard";
@@ -22,8 +21,8 @@ export default function Home() {
       </Head>
 
       <Header />
-      <div className={styles.main}>
-        <ThreeContainer data={arr.slice(0, 3)} />
+      <div className="m-auto mt-10 md:w-11/12 lg:w-9/12">
+        {/* <ThreeContainer data={arr.slice(0, 3)} /> */}
         <GridContent data={arr} />
       </div>
       <Footer />
@@ -47,7 +46,7 @@ function ThreeContainer({ data }) {
 
 function GridContent({ data }) {
   return (
-    <div className={styles.gridcont}>
+    <div className="grid gap-5 grid-cols-1 md:grid-cols-3  ">
       {data.map((_d) => (
         <BlogCard data={_d} orientation="vertical" size="small" key={_d.id} />
       ))}
