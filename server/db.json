@@ -1,0 +1,74 @@
+{
+    "ads": [
+        {
+            "id": "123",
+            "title": "Google",
+            "size": "500x400",
+            "location": [
+                5,
+                "before each para"
+            ],
+            "tag": "<div class=\"mke39A1\"></div>"
+        },
+        {
+            "id": "234",
+            "title": "Google",
+            "size": "500x400",
+            "location": [
+                5,
+                "before each para"
+            ],
+            "tag": "<div class=\"mke39A1\"></div>"
+        },
+        {
+            "id": "345",
+            "title": "Google",
+            "size": "500x400",
+            "location": [
+                5,
+                "before each para"
+            ],
+            "tag": "<div class=\"mke39A1\"></div>"
+        },
+        {
+            "id": "456",
+            "title": "Google",
+            "size": "500x400",
+            "location": [
+                5,
+                "before each para"
+            ],
+            "tag": "<div class=\"mke39A1\"></div>"
+        },
+        {
+            "id": "567",
+            "title": "Google",
+            "size": "500x400",
+            "location": [
+                5,
+                "before each para"
+            ],
+            "tag": "<div class=\"mke39A1\"></div>"
+        },
+        {
+            "id": "678",
+            "title": "Google",
+            "size": "500x400",
+            "location": [
+                5,
+                "before each para"
+            ],
+            "tag": "<div class=\"mke39A1\"></div>"
+        },
+        {
+            "id": "789",
+            "title": "Google",
+            "size": "500x400",
+            "location": [
+                5,
+                "before each para"
+            ],
+            "tag": "<div class=\"mke39A1\"></div>"
+        }
+    ]
+}
